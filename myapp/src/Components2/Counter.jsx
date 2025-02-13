@@ -4,11 +4,11 @@ const Counter = () => {
   const [counter, setCounter] = useState(100);
 
   const increment = () => {
-    setCounter(counter + 51);
+    setCounter(counter + 50);
   };
 
   const decrement = () => {
-    if (counter - 12 < 100) {
+    if (counter - 90 < 100) {
       alert(" Counter value is above decres 100!");
     }
     setCounter(counter - 12);
@@ -19,7 +19,7 @@ const Counter = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "20px" }}>
+    <div style={{ textAlign: "center", marginTop: "0px", display:" display-flex" }}>
       <h2>Counter Value: {counter}</h2>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
